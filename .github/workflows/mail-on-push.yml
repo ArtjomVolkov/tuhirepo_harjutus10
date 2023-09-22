@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send mail
-        uses: ddawid6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
-          server_post: 465
+          server_address: stmp.gmail.com
+          server_port: 465
           username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: ${{github.repository}}
-          body: ${{github.event.head_commit.message}}
-          to: ${{github.event.pusher.name}}
-          from: GitHub Actions
+          password: ${{secrest.MAIL_PASSWORD}}
+          subject: GG
+          body: Build job of ${{github.repository}} completed successfully!
+          to: artjomvolk123@gmail.com
+          from: Github actions
