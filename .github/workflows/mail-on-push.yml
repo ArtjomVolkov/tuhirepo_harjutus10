@@ -13,6 +13,6 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrest.MAIL_PASSWORD}}
           subject: GG
-          body: Build job of ${{github.repository}} completed successfully!
+          body: Build joob of ${{github.repository}} completed successfully!
           to: artjomvolk123@gmail.com
           from: Github actions
